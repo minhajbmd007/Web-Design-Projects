@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECH FACTORY | Smartphones</title>
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Support</a></li>
+          <li>
+  <a href="cart.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</li>
+<li>
+  <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">
+    🌙
+  </button>
+</li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Smartphones</h2>
+      <p style="text-align: center; margin-bottom: 30px; color: #555;">Discover the latest smartphones from top brands at unbeatable prices.</p>
+    </div>
+  </section>
+
+ <!-- Product Grid -->
+<section class="section">
+  <div class="container">
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+  <a href="product.html?id=7" class="product-link">
+    <img src="images/phone1.jpg" alt="iPhone 15 Pro">
+    <h3>iPhone 15 Pro</h3>
+    <p>$999</p>
+  </a>
+  <button class="add-to-cart" 
+    data-name="iPhone 15 Pro" 
+    data-price="999" 
+    data-image="images/phone1.jpg">
+    Add to Cart
+  </button>
+</div>
+
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="product.html?id=8" class="product-link">
+        <img src="images/phone2.jpg" alt="Phone 2">
+        <h3>Samsung Galaxy S24</h3>
+        <p>$899</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Samsung Galaxy S24" 
+          data-price="899" 
+          data-image="images/phone2.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="product.html?id=9" class="product-link">
+        <img src="images/phone3.jpg" alt="Phone 3">
+        <h3>Google Pixel 8 Pro</h3>
+        <p>$799</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Google Pixel 8 Pro" 
+          data-price="799" 
+          data-image="images/phone3.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="product.html?id=10" class="product-link">
+        <img src="images/phone4.jpg" alt="Phone 4">
+        <h3>OnePlus 12</h3>
+        <p>$749</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="OnePlus 12" 
+          data-price="749" 
+          data-image="images/phone4.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="product.html?id=11" class="product-link">
+        <img src="images/phone5.jpg" alt="Phone 5">
+        <h3>Xiaomi 14 Pro</h3>
+        <p>$699</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Xiaomi 14 Pro" 
+          data-price="699" 
+          data-image="images/phone5.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="product.html?id=12" class="product-link">
+        <img src="images/phone6.jpg" alt="Phone 6">
+        <h3>Nothing Phone 2</h3>
+        <p>$599</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Nothing Phone 2" 
+          data-price="599" 
+          data-image="images/phone6.jpg">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

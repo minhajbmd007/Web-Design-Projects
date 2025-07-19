@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECH FACTORY | Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .cart-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-item img {
+      width: 80px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .item-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .item-details h4 {
+      margin: 0;
+    }
+    .quantity {
+      width: 60px;
+      padding: 6px;
+    }
+    .remove-btn {
+      background: red;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .total {
+      text-align: right;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .empty-cart {
+      text-align: center;
+      color: #888;
+      padding: 50px 0;
+    }
+    .checkout-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Section -->
+  <div class="cart-container" id="cart">
+    <!-- Cart items will be injected here -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+   function renderCart() {
+  const cartContainer = document.getElementById('cart');
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = '<div class="empty-cart"><h2>Your cart is empty.</h2></div>';
+    return;
+  }
+
+  let html = '';
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    const itemTotal = item.price * item.quantity;
+    total += itemTotal;
+
+    html += `
+      <div class="cart-item" data-index="${index}">
+        <img src="${item.image}" alt="${item.name}" />
+        <div class="item-details">
+          <h4>${item.name}</h4>
+          <p>Price: $${item.price}</p>
+          <p>
+            Qty:
+            <input type="number" class="quantity" value="${item.quantity}" min="1" />
+          </p>
+        </div>
+        <p>$${itemTotal.toFixed(2)}</p>
+        <button class="remove-btn">Remove</button>
+      </div>
+    `;
+  });
+
+  // ✅ Add total and checkout button AFTER the loop
+  html += `
+    <div class="total">Total: $${total.toFixed(2)}</div>
+    <div style="text-align: right; margin-top: 20px;">
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+  `;
+
+  cartContainer.innerHTML = html;
+
+  // Event listeners for remove & quantity change
+  document.querySelectorAll('.remove-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const index = e.target.closest('.cart-item').dataset.index;
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    });
+  });
+
+  document.querySelectorAll('.quantity').forEach(input => {
+    input.addEventListener('change', e => {
+      const newQty = parseInt(e.target.value);
+      const index = e.target.closest('.cart-item').dataset.index;
+      if (newQty > 0) {
+        cart[index].quantity = newQty;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+      }
+    });
+  });
+}
+
+
+    document.addEventListener('DOMContentLoaded', renderCart);
+  </script>
+</body>
+</html>

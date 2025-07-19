@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECH FACTORY | Smartwatches</title>
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Support</a></li>
+          <li>
+  <a href="cart.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</li>
+<li>
+  <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">
+    🌙
+  </button>
+</li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Smartwatches</h2>
+      <p style="text-align: center; margin-bottom: 30px; color: #555;">Track fitness, stay connected, and upgrade your wristwear with the best smartwatches.</p>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+<section class="section">
+  <div class="container">
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="product.html?id=13" class="product-link">
+        <img src="images/watch1.jpg" alt="Watch 1">
+        <h3>Apple Watch Series 9</h3>
+        <p>$399</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Apple Watch Series 9" 
+          data-price="399" 
+          data-image="images/watch1.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="product.html?id=14" class="product-link">
+        <img src="images/watch2.jpg" alt="Watch 2">
+        <h3>Samsung Galaxy Watch 6</h3>
+        <p>$329</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Samsung Galaxy Watch 6" 
+          data-price="329" 
+          data-image="images/watch2.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="product.html?id=15" class="product-link">
+        <img src="images/watch3.jpg" alt="Watch 3">
+        <h3>Google Pixel Watch 2</h3>
+        <p>$349</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Google Pixel Watch 2" 
+          data-price="349" 
+          data-image="images/watch3.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="product.html?id=16" class="product-link">
+        <img src="images/watch4.jpg" alt="Watch 4">
+        <h3>Fitbit Versa 4</h3>
+        <p>$229</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Fitbit Versa 4" 
+          data-price="229" 
+          data-image="images/watch4.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="product.html?id=17" class="product-link">
+        <img src="images/watch5.jpg" alt="Watch 5">
+        <h3>Garmin Venu 3</h3>
+        <p>$449</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Garmin Venu 3" 
+          data-price="449" 
+          data-image="images/watch5.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="product.html?id=18" class="product-link">
+        <img src="images/watch6.jpg" alt="Watch 6">
+        <h3>Huawei Watch GT 4</h3>
+        <p>$299</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Huawei Watch GT 4" 
+          data-price="299" 
+          data-image="images/watch6.jpg">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

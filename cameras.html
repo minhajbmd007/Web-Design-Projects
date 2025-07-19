@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECH FACTORY | Cameras</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Support</a></li>
+          <li>
+  <a href="cart.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</li>
+<li>
+  <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">
+    🌙
+  </button>
+</li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Cameras</h2>
+      <p style="text-align: center; margin-bottom: 30px; color: #555;">Capture stunning photos and videos with the latest DSLR and mirrorless cameras.</p>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+<section class="section">
+  <div class="container">
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="product.html?id=25" class="product-link">
+        <img src="images/camera1.jpg" alt="Camera 1">
+        <h3>Canon EOS R6 Mark II</h3>
+        <p>$2,499</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Canon EOS R6 Mark II" 
+          data-price="2499" 
+          data-image="images/camera1.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="product.html?id=26" class="product-link">
+        <img src="images/camera2.jpg" alt="Camera 2">
+        <h3>Sony Alpha A7 IV</h3>
+        <p>$2,399</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Sony Alpha A7 IV" 
+          data-price="2399" 
+          data-image="images/camera2.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="product.html?id=27" class="product-link">
+        <img src="images/camera3.jpg" alt="Camera 3">
+        <h3>Nikon Z6 II</h3>
+        <p>$1,999</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Nikon Z6 II" 
+          data-price="1999" 
+          data-image="images/camera3.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="product.html?id=28" class="product-link">
+        <img src="images/camera4.jpg" alt="Camera 4">
+        <h3>Fujifilm X-T5</h3>
+        <p>$1,699</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Fujifilm X-T5" 
+          data-price="1699" 
+          data-image="images/camera4.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="product.html?id=29" class="product-link">
+        <img src="images/camera5.jpg" alt="Camera 5">
+        <h3>Panasonic Lumix GH6</h3>
+        <p>$2,199</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Panasonic Lumix GH6" 
+          data-price="2199" 
+          data-image="images/camera5.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="product.html?id=30" class="product-link">
+        <img src="images/camera6.jpg" alt="Camera 6">
+        <h3>Olympus OM-1</h3>
+        <p>$1,899</p>
+        <button class="add-to-cart" 
+          data-name="Olympus OM-1" 
+          data-price="1899" 
+          data-image="images/camera6.jpg">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

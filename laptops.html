@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TECH FACTORY | Laptops</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Support</a></li>
+          <li>
+  <a href="cart.html" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</li>
+<li>
+  <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">
+    🌙
+  </button>
+</li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Laptops</h2>
+      <p style="text-align: center; margin-bottom: 30px; color: #555;">Find the latest high-performance laptops for work, gaming, and everything in between.</p>
+    </div>
+  </section>
+
+ <!-- Product Grid -->
+<section class="section">
+  <div class="container">
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <a href="product.html?id=1">
+          <img src="images/laptop1.jpg" alt="HP Spectre x360">
+          <h3>HP Spectre x360</h3>
+          <p>$1,099</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="HP Spectre x360" 
+          data-price="1099" 
+          data-image="images/laptop1.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <a href="product.html?id=2">
+          <img src="images/laptop2.jpg" alt="Dell XPS 13">
+          <h3>Dell XPS 13</h3>
+          <p>$1,249</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Dell XPS 13" 
+          data-price="1249" 
+          data-image="images/laptop2.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <a href="product.html?id=3">
+          <img src="images/laptop3.jpg" alt="MacBook Air M2">
+          <h3>MacBook Air M2</h3>
+          <p>$1,099</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="MacBook Air M2" 
+          data-price="1099" 
+          data-image="images/laptop3.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <a href="product.html?id=4">
+          <img src="images/laptop4.jpg" alt="ASUS ROG Zephyrus">
+          <h3>ASUS ROG Zephyrus</h3>
+          <p>$1,499</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="ASUS ROG Zephyrus" 
+          data-price="1499" 
+          data-image="images/laptop4.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <a href="product.html?id=5">
+          <img src="images/laptop5.jpg" alt="Lenovo ThinkPad X1">
+          <h3>Lenovo ThinkPad X1</h3>
+          <p>$1,299</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Lenovo ThinkPad X1" 
+          data-price="1299" 
+          data-image="images/laptop5.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <a href="product.html?id=6">
+          <img src="images/laptop6.jpg" alt="Acer Swift 5">
+          <h3>Acer Swift 5</h3>
+          <p>$899</p>
+        </a>
+        <button class="add-to-cart" 
+          data-name="Acer Swift 5" 
+          data-price="899" 
+          data-image="images/laptop6.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="js/cart.js"></script>
+<script src="js/darkmode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECH FACTORY - Your Gadget Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header animate__animated animate__fadeInDown">
+    <div class="container">
+      <div class="logo">TECH FACTORY</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="animate__animated animate__fadeIn">Home</a></li>
+          <li><a href="categories.html" class="animate__animated animate__fadeIn" data-aos="fade-down">Categories</a></li>
+          <li><a href="#" class="animate__animated animate__fadeIn" data-aos="fade-down" data-aos-delay="100">Deals</a></li>
+          <li><a href="#" class="animate__animated animate__fadeIn" data-aos="fade-down" data-aos-delay="200">Support</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon animate__animated animate__pulse animate__infinite" data-aos="zoom-in">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li>
+            <button id="darkModeToggle" class="dark-mode-btn" title="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container hero-content">
+      <div class="hero-text" data-aos="fade-right">
+        <h1 class="animate__animated animate__fadeInUp">Explore the Future of Tech</h1>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Latest gadgets. Best prices. Trusted brands.</p>
+        <a href="categories.html" class="btn-primary animate__animated animate__zoomIn animate__delay-2s">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title" data-aos="zoom-in">Shop by Category</h2>
+      <div class="category-grid">
+        <a href="laptops.html" class="category-card" data-aos="flip-left">💻 Laptops</a>
+        <a href="smartphones.html" class="category-card" data-aos="flip-left" data-aos-delay="100">📱 Smartphones</a>
+        <a href="smartwatches.html" class="category-card" data-aos="flip-left" data-aos-delay="200">⌚ Smartwatches</a>
+        <a href="headphones.html" class="category-card" data-aos="flip-left" data-aos-delay="300">🎧 Headphones</a>
+        <a href="cameras.html" class="category-card" data-aos="flip-left" data-aos-delay="400">📸 Cameras</a>
+        <a href="tablets.html" class="category-card" data-aos="flip-left" data-aos-delay="500">📲 Tablets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section featured" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title" data-aos="zoom-in">Featured Deals</h2>
+      <div class="product-grid">
+        <div class="product-card" data-aos="fade-up">
+          <a href="product.html?id=1">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h3>HP Spectre x360</h3>
+            <p>$1,099</p>
+          </a>
+          <button class="add-to-cart"
+            data-name="HP Spectre x360"
+            data-price="1099"
+            data-image="images/laptop.jpg">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <a href="product.html?id=7">
+            <img src="images/smartphone.jpg" alt="Smartphone">
+            <h3>iPhone 15 Pro</h3>
+            <p>$999</p>
+          </a>
+          <button class="add-to-cart"
+            data-name="iPhone 15 Pro"
+            data-price="999"
+            data-image="images/smartphone.jpg">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <a href="product.html?id=19">
+            <img src="images/headphones.jpg" alt="Headphones">
+            <h3>Sony WH-1000XM5</h3>
+            <p>$349</p>
+          </a>
+          <button class="add-to-cart"
+            data-name="Sony WH-1000XM5"
+            data-price="349"
+            data-image="images/headphones.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="container">
+      <p>&copy; 2025 TECH FACTORY. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+
+  <!-- AOS Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+  </script>
+</body>
+</html>
